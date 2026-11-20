@@ -6,8 +6,8 @@ config=\
 "backend my_servers
         mode http
         balance roundrobin
-        server 7173-web-01 13.219.76.107:80 check
-        server 7173-web-02 44.204.87.91:80 check
+        server 7173-web-01 13.40.65.165:80 check
+        server 7173-web-02 18.134.248.244:80 check
 frontend haproxy_inbound
         bind *:80
         default_backend my_servers
